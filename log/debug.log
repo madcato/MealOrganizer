@@ -1,0 +1,85 @@
+# Logfile created on 2016-11-15 12:04:55 +0100 by logger.rb/47272
+D, [2016-11-15T12:05:56.833827 #38034] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+D, [2016-11-15T12:05:56.838019 #38034] DEBUG -- :   [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2016-11-15T12:05:56.852219 #38034] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2016-11-15T12:05:56.855935 #38034]  INFO -- : Migrating to Schema (1)
+D, [2016-11-15T12:05:56.858071 #38034] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T12:05:56.859844 #38034] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "meal" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "time" integer, "description" text)[0m
+D, [2016-11-15T12:05:56.864355 #38034] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "1"]]
+D, [2016-11-15T12:05:56.865173 #38034] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T12:05:56.866975 #38034] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+D, [2016-11-15T12:05:56.869987 #38034] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T12:05:56.871093 #38034] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "default_env"], ["created_at", 2016-11-15 11:05:56 UTC], ["updated_at", 2016-11-15 11:05:56 UTC]]
+D, [2016-11-15T12:05:56.871960 #38034] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:21:35.022907 #39096] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2016-11-15T18:21:35.030880 #39096]  INFO -- : Migrating to CurrentWeek (2)
+D, [2016-11-15T18:22:02.008528 #39106] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2016-11-15T18:22:02.015275 #39106]  INFO -- : Migrating to CurrentWeek (2)
+D, [2016-11-15T18:22:02.016983 #39106] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:22:02.022063 #39106] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "week" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "time" integer, "created_at" datetime, "updated_at" datetime)[0m
+D, [2016-11-15T18:22:02.025409 #39106] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "2"]]
+D, [2016-11-15T18:22:02.026588 #39106] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:22:02.028691 #39106] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+D, [2016-11-15T18:22:02.031500 #39106] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:22:02.032161 #39106] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:26:57.533961 #39178] DEBUG -- :   [1m[36mWeek Load (0.2ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:28:12.856652 #39189] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2016-11-15T18:28:12.867462 #39189] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+D, [2016-11-15T18:28:12.870783 #39189] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:28:12.871709 #39189] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:28:29.020503 #39193] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2016-11-15T18:28:29.030015 #39193] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+D, [2016-11-15T18:28:29.032773 #39193] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:28:29.033590 #39193] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:28:33.955380 #39196] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2016-11-15T18:28:33.960598 #39196]  INFO -- : Migrating to CurrentWeek (2)
+D, [2016-11-15T18:28:33.970049 #39196] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:28:33.975955 #39196] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "week" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "time" integer, "created_at" datetime, "updated_at" datetime)[0m
+D, [2016-11-15T18:28:33.978828 #39196] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "2"]]
+D, [2016-11-15T18:28:33.979681 #39196] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:28:33.981631 #39196] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+D, [2016-11-15T18:28:33.984193 #39196] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:28:33.984824 #39196] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:29:10.362294 #39211] DEBUG -- :   [1m[36mWeek Load (0.2ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:31:23.552659 #39261] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2016-11-15T18:31:23.562527 #39261] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+D, [2016-11-15T18:31:23.565437 #39261] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:31:23.566275 #39261] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:31:38.554289 #39264] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2016-11-15T18:31:38.558510 #39264]  INFO -- : Migrating to CurrentWeek (2)
+D, [2016-11-15T18:31:38.560308 #39264] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:31:38.565339 #39264] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "weeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "currentWeek" integer, "created_at" datetime, "updated_at" datetime)[0m
+D, [2016-11-15T18:31:38.567995 #39264] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "2"]]
+D, [2016-11-15T18:31:38.568853 #39264] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:31:38.570730 #39264] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+D, [2016-11-15T18:31:38.574105 #39264] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:31:38.575016 #39264] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:31:40.322627 #39265] DEBUG -- :   [1m[36mWeek Load (0.1ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:31:40.328016 #39265] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:31:40.329271 #39265] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "weeks" ("currentWeek", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["currentWeek", 0], ["created_at", 2016-11-15 17:31:40 UTC], ["updated_at", 2016-11-15 17:31:40 UTC]]
+D, [2016-11-15T18:31:40.330561 #39265] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:32:11.832842 #39282] DEBUG -- :   [1m[36mWeek Load (0.2ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:32:50.101906 #39299] DEBUG -- :   [1m[36mWeek Load (0.2ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:32:50.111951 #39299] DEBUG -- :   [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT  "meals".* FROM "meals" WHERE ("meals"."id" >= 0 AND "meals"."id" < 6) LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:34:56.562902 #39347] DEBUG -- :   [1m[36mWeek Load (0.2ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:37:50.723003 #39382] DEBUG -- :   [1m[36mWeek Load (0.2ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:38:04.327589 #39396] DEBUG -- :   [1m[36mWeek Load (0.1ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:38:04.334781 #39396] DEBUG -- :   [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE ("meals"."id" >= 0 AND "meals"."id" < 7)[0m
+D, [2016-11-15T18:38:58.518442 #39407] DEBUG -- :   [1m[36mWeek Load (0.1ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:38:58.526315 #39407] DEBUG -- :   [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE ("meals"."id" >= 0 AND "meals"."id" < 7)[0m
+D, [2016-11-15T18:38:58.529653 #39407] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:38:58.531756 #39407] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "weeks" SET "currentWeek" = ?, "updated_at" = ? WHERE "weeks"."id" = ?[0m  [["currentWeek", 1], ["updated_at", 2016-11-15 17:38:58 UTC], ["id", 1]]
+D, [2016-11-15T18:38:58.540346 #39407] DEBUG -- :   [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:39:17.461701 #39426] DEBUG -- :   [1m[36mWeek Load (0.1ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:39:17.469160 #39426] DEBUG -- :   [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE ("meals"."id" >= 1 AND "meals"."id" < 8)[0m
+D, [2016-11-15T18:39:17.472278 #39426] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:39:17.474134 #39426] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "weeks" SET "currentWeek" = ?, "updated_at" = ? WHERE "weeks"."id" = ?[0m  [["currentWeek", 2], ["updated_at", 2016-11-15 17:39:17 UTC], ["id", 1]]
+D, [2016-11-15T18:39:17.482997 #39426] DEBUG -- :   [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:40:03.677672 #39432] DEBUG -- :   [1m[36mWeek Load (0.1ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2016-11-15T18:40:03.682762 #39432] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:40:03.684034 #39432] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "weeks" ("currentWeek", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["currentWeek", 0], ["created_at", 2016-11-15 17:40:03 UTC], ["updated_at", 2016-11-15 17:40:03 UTC]]
+D, [2016-11-15T18:40:03.692142 #39432] DEBUG -- :   [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-11-15T18:40:03.694586 #39432] DEBUG -- :   [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE ("meals"."id" >= 0 AND "meals"."id" < 7)[0m
+D, [2016-11-15T18:40:03.698021 #39432] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-11-15T18:40:03.699618 #39432] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "weeks" SET "currentWeek" = ?, "updated_at" = ? WHERE "weeks"."id" = ?[0m  [["currentWeek", 1], ["updated_at", 2016-11-15 17:40:03 UTC], ["id", 2]]
+D, [2016-11-15T18:40:03.700411 #39432] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
