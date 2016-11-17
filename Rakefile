@@ -18,17 +18,21 @@ task :next do
   end
   
   # Show current week meals
-  meals = Meal.where(id: [w.currentWeek...w.currentWeek+7])
-  
-  for i in 0...6
+  cw = w.currentWeek * 7
+  meals = Meal.where(id: [cw...(cw+8)])
+  p meals.count
+  for i in 0...7
     puts DAY_NAMES[i]
-    puts "-----------"
+    puts ""
     puts meals[i].description
     puts ""
   end
   
   # Update week
   w.currentWeek += 1
+  if w.currentWeek >= 11
+    w.currentWeek = 0
+  end
   w.save
 end
 
