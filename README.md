@@ -9,6 +9,10 @@ Scripts for help to organise the weekly meals automatically
 
     $ rake migrate
 
+3. Load meal data
+
+    $ rake load
+
 ## Usage
 
 To generate the week meals execute command:
