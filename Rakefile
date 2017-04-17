@@ -35,10 +35,3 @@ task :next do
   end
   w.save
 end
-
-desc "Load first articles"
-task :load do
-  manager = Loader.new
-  manager.load('data/articulos_es.md')
-end
-
