@@ -132,3 +132,22 @@ D, [2016-11-17T16:21:56.759461 #46469] DEBUG -- :   [1m[36mMeal Load (0.2ms)[
 D, [2016-11-17T16:21:56.763146 #46469] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 D, [2016-11-17T16:21:56.764537 #46469] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "weeks" SET "currentWeek" = ?, "updated_at" = ? WHERE "weeks"."id" = ?[0m  [["currentWeek", 1], ["updated_at", 2016-11-17 15:21:56 UTC], ["id", 5]]
 D, [2016-11-17T16:21:56.765427 #46469] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+D, [2018-07-11T10:01:01.479484 #16327] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2018-07-11T10:02:14.426868 #16373] DEBUG -- :   [1m[36mWeek Load (0.1ms)[0m  [1mSELECT  "weeks".* FROM "weeks"  ORDER BY "weeks"."id" ASC LIMIT 1[0m
+D, [2018-07-11T10:02:14.437646 #16373] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "meals" WHERE ("meals"."id" >= 7 AND "meals"."id" < 15)
+D, [2018-07-11T10:02:14.438005 #16373] DEBUG -- :   [1m[36mMeal Load (0.1ms)[0m  [1mSELECT "meals".* FROM "meals" WHERE ("meals"."id" >= 7 AND "meals"."id" < 15)[0m
+D, [2018-07-11T10:02:14.439925 #16373] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2018-07-11T10:02:14.443437 #16373] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "weeks" SET "currentWeek" = ?, "updated_at" = ? WHERE "weeks"."id" = ?[0m  [["currentWeek", 2], ["updated_at", "2018-07-11 08:02:14.441789"], ["id", 5]]
+D, [2018-07-11T10:02:14.444848 #16373] DEBUG -- :   [1m[35m (1.2ms)[0m  commit transaction
+D, [2018-07-11T10:02:28.101636 #16374] DEBUG -- :   [1m[36mWeek Load (0.1ms)[0m  [1mSELECT  "weeks".* FROM "weeks"  ORDER BY "weeks"."id" ASC LIMIT 1[0m
+D, [2018-07-11T10:02:28.108369 #16374] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "meals" WHERE ("meals"."id" >= 14 AND "meals"."id" < 22)
+D, [2018-07-11T10:02:28.108745 #16374] DEBUG -- :   [1m[36mMeal Load (0.1ms)[0m  [1mSELECT "meals".* FROM "meals" WHERE ("meals"."id" >= 14 AND "meals"."id" < 22)[0m
+D, [2018-07-11T10:02:28.110498 #16374] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2018-07-11T10:02:28.112506 #16374] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "weeks" SET "currentWeek" = ?, "updated_at" = ? WHERE "weeks"."id" = ?[0m  [["currentWeek", 3], ["updated_at", "2018-07-11 08:02:28.111578"], ["id", 5]]
+D, [2018-07-11T10:02:28.114920 #16374] DEBUG -- :   [1m[35m (2.1ms)[0m  commit transaction
+D, [2018-07-11T10:18:18.255718 #16433] DEBUG -- :   [1m[36mWeek Load (0.1ms)[0m  [1mSELECT  "weeks".* FROM "weeks"  ORDER BY "weeks"."id" ASC LIMIT 1[0m
+D, [2018-07-11T10:18:18.265594 #16433] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "meals" WHERE ("meals"."id" >= 21 AND "meals"."id" < 29)
+D, [2018-07-11T10:18:18.265976 #16433] DEBUG -- :   [1m[36mMeal Load (0.1ms)[0m  [1mSELECT "meals".* FROM "meals" WHERE ("meals"."id" >= 21 AND "meals"."id" < 29)[0m
+D, [2018-07-11T10:18:18.267772 #16433] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
+D, [2018-07-11T10:18:18.269822 #16433] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "weeks" SET "currentWeek" = ?, "updated_at" = ? WHERE "weeks"."id" = ?[0m  [["currentWeek", 4], ["updated_at", "2018-07-11 08:18:18.268884"], ["id", 5]]
+D, [2018-07-11T10:18:18.271295 #16433] DEBUG -- :   [1m[35m (1.3ms)[0m  commit transaction
