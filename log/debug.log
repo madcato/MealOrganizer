@@ -151,3 +151,15 @@ D, [2018-07-11T10:18:18.265976 #16433] DEBUG -- :   [1m[36mMeal Load (0.1ms)[
 D, [2018-07-11T10:18:18.267772 #16433] DEBUG -- :   [1m[35m (0.0ms)[0m  begin transaction
 D, [2018-07-11T10:18:18.269822 #16433] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "weeks" SET "currentWeek" = ?, "updated_at" = ? WHERE "weeks"."id" = ?[0m  [["currentWeek", 4], ["updated_at", "2018-07-11 08:18:18.268884"], ["id", 5]]
 D, [2018-07-11T10:18:18.271295 #16433] DEBUG -- :   [1m[35m (1.3ms)[0m  commit transaction
+D, [2018-07-14T10:39:21.566265 #9454] DEBUG -- :   [1m[36mWeek Load (12.8ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2018-07-14T10:39:21.590936 #9454] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "meals" WHERE "meals"."id" >= ? AND "meals"."id" < ?[0m  [["id", 28], ["id", 36]]
+D, [2018-07-14T10:39:21.592812 #9454] DEBUG -- :   [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" >= ? AND "meals"."id" < ?[0m  [["id", 28], ["id", 36]]
+D, [2018-07-14T10:39:21.597192 #9454] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2018-07-14T10:39:21.598979 #9454] DEBUG -- :   [1m[36mWeek Update (0.5ms)[0m  [1m[33mUPDATE "weeks" SET "currentWeek" = ?, "updated_at" = ? WHERE "weeks"."id" = ?[0m  [["currentWeek", 5], ["updated_at", "2018-07-14 08:39:21.597473"], ["id", 5]]
+D, [2018-07-14T10:39:21.601038 #9454] DEBUG -- :   [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+D, [2018-07-14T10:43:54.680088 #9522] DEBUG -- :   [1m[36mWeek Load (0.2ms)[0m  [1m[34mSELECT  "weeks".* FROM "weeks" ORDER BY "weeks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+D, [2018-07-14T10:43:54.688978 #9522] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "meals" WHERE "meals"."id" >= ? AND "meals"."id" < ?[0m  [["id", 35], ["id", 43]]
+D, [2018-07-14T10:43:54.689679 #9522] DEBUG -- :   [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" >= ? AND "meals"."id" < ?[0m  [["id", 35], ["id", 43]]
+D, [2018-07-14T10:43:54.693270 #9522] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+D, [2018-07-14T10:43:54.694945 #9522] DEBUG -- :   [1m[36mWeek Update (0.4ms)[0m  [1m[33mUPDATE "weeks" SET "currentWeek" = ?, "updated_at" = ? WHERE "weeks"."id" = ?[0m  [["currentWeek", 6], ["updated_at", "2018-07-14 08:43:54.693534"], ["id", 5]]
+D, [2018-07-14T10:43:54.704732 #9522] DEBUG -- :   [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
