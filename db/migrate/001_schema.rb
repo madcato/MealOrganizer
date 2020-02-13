@@ -1,4 +1,4 @@
-class Schema < ActiveRecord::Migration
+class Schema < ActiveRecord::Migration[6.0]
   def change
     create_table :meals, force: true do |t|
       t.integer :time
@@ -6,5 +6,3 @@ class Schema < ActiveRecord::Migration
     end
   end
 end
-
-
